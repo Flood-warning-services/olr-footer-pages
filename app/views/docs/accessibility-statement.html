@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Accessibility statement
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/"
+      }
+    ]
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Accessibility statement
+      </h1>
+
+      <p>This accessibility statement applies to the Flood Warning Service on GOV.UK.</p>
+
+      <p>This website is run by the Environment Agency. We want as many people as possible to be able to use this website. For example, that means you should be able to:</p>
+
+    </div>
+  </div>
+
+{% endblock %}
