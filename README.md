@@ -6,11 +6,14 @@ This repo contains information and code related to new pages on the Flood Warnin
 
 TBC
 
-## Accessibility statement
-
-TBC
-
 ## Terms and conditions
 
 TBC
 
+## Privacy notice
+
+TBC
+
+## Accessibility statement
+
+TBC
