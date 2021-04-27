@@ -1,98 +1,101 @@
-{% extends "layout.html" %}
-
-{% block pageTitle %}
-  Cookies
-{% endblock %}
-
-{% block beforeContent %}
-  {{ govukBreadcrumbs({
-    items: [
-      {
-        text: "Home",
-        href: "/"
-      }
-    ]
-  }) }}
-{% endblock %}
-
-{% block content %}
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-
-      <h1 class="govuk-heading-xl">Cookies</h1>
-
-      <p>Cookies are small files put onto your device when you visit and browse a website. We use cookies to make the service work and collect information about how you use our service.</p>
-      <p>Cookies aren't used to identify you.</p>
-
-      <p><a href="https://ico.org.uk/for-the-public/online/cookies/">Find out how to manage cookies</a>.</p>
-
-      <h2 class="govuk-heading-m">Essential cookies</h2>
-    <p>Essential cookies keep your information secure while you use the service. We do not need to ask permission to use them.</p>
-
-    <table class="govuk-table">
-      <caption class="govuk-visually-hidden">Essential cookies</caption>
-
-      <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter govuk-body-s">Cookie name</th>
-          <th scope="col" class="govuk-table__header govuk-!-width-one-half govuk-body-s">What it does</th>
-          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter govuk-body-s">Expires</th>
-        </tr>
-      </thead>
-      <tbody class="govuk-table__body">
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell govuk-body-s">sid</td>
-          <td class="govuk-table__cell govuk-body-s">This is a session cookie to provide user authentication. Azure Active Directory will use the user session cookie to automatically sign in the user and they will not have to re-enter the credentials. If the user has multiple user accounts in session with Azure Active Directory, the user will be prompted to pick the relevant account to sign in with. the first time</td>
-          <td class="govuk-table__cell govuk-body-s">30 minutes</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2 class="govuk-heading-m">Analytics cookies</h2>
-    <p>We use Google Analytics to collect data about how you use the service. This information helps us to improve our service.</p>
-    <p>Google is not allowed to use or share our analytics data with anyone.</p>
-    <p>Google Analytics stores anonymised information about:</p>
-    <ul class="govuk-list govuk-list--bullet">
-      <li>how you got to the service</li>
-      <li>the pages you visit on the service and how long you spend on them</li>
-      <li>any errors you see while using the service</li>
-    </ul>
-
-    <table class="govuk-table">
-      <caption class="govuk-visually-hidden">Google Analytics cookies</caption>
-      <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter govuk-body-s">Cookie name</th>
-          <th scope="col" class="govuk-table__header govuk-!-width-one-half govuk-body-s">What it does</th>
-          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter govuk-body-s">Expires</th>
-        </tr>
-      </thead>
-      <tbody class="govuk-table__body">
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell govuk-body-s">_ga</td>
-          <td class="govuk-table__cell govuk-body-s">The cookie is used to calculate visitor, session, campaign data and keep track of site usage for the site's analytics report. The cookies store information anonymously and assign a randomly generated number to identify unique visitors</td>
-          <td class="govuk-table__cell govuk-body-s">2 years</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell govuk-body-s">_gid</td>
-          <td class="govuk-table__cell govuk-body-s">The cookie is used to store information of how visitors use a website and helps in creating an analytics report of how the website is doing. The data collected including the number visitors, the source where they have come from, and the pages visited in an anonymous form</td>
-          <td class="govuk-table__cell govuk-body-s">24 hours</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell govuk-body-s">_utma</td>
-          <td class="govuk-table__cell govuk-body-s">Like _ga, this lets us know if you’ve visited before, so we can count how many of our visitors are new to the service or to a certain page</td>
-          <td class="govuk-table__cell govuk-body-s">2 years (TBC)</td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell govuk-body-s">_utmz</td>
-          <td class="govuk-table__cell govuk-body-s">This tells us how you reached the service (for example from another website or a search engine)</td>
-          <td class="govuk-table__cell govuk-body-s">6 months (TBC)</td>
-        </tr>
-
-      </tbody>
-    </table>
-    </div>
-  </div>
-
-{% endblock %}
+{% extends "layout.html" %} {% block pageTitle %} Cookies {% endblock %} {% block beforeContent %} {{ govukBreadcrumbs({ items: [ { text: "Home", href: "/" } ] }) }} {% endblock %} {% block content %}
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl">Cookies</h1>
+			<p>Cookies are small files put onto your device when you visit and browse a website. We use cookies to make the service work and collect information about how you use our service. You will normally see a message on the site before we store a cookie on your computer.</p>
+			<p>Cookies aren't used to identify you.</p>
+			<p>You can delete cookies from your device.<a href="https://ico.org.uk/for-the-public/online/cookies/">Find out how to manage cookies</a>.</p>
+			<h2 class="govuk-heading-m">The cookies we use</h2>
+			<h3 class="govuk-heading-s">Introductory message cookie</h3>
+			<p>When you first visit these pages, you may see a cookie message appear at the top of the screen. Once you’ve seen the message, we store a cookie on your device so your browser does not show it again.</p>
+			<table class="govuk-table">
+				<caption class="govuk-visually-hidden">
+					Introductory cookies
+				</caption>
+				<thead class="govuk-table__head">
+					<tr class="govuk-table__row">
+						<th class="govuk-table__header govuk-!-width-one-quarter govuk-body-s" scope="col">Cookie name</th>
+						<th class="govuk-table__header govuk-!-width-one-half govuk-body-s" scope="col">What it does</th>
+						<th class="govuk-table__header govuk-!-width-one-quarter govuk-body-s" scope="col">Expires</th>
+					</tr>
+				</thead>
+				<tbody class="govuk-table__body">
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-body-s">seen-cookie-message</td>
+						<td class="govuk-table__cell govuk-body-s">Stops the browser showing the cookie message after the first showing</td>
+						<td class="govuk-table__cell govuk-body-s">TBC</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3 class="govuk-heading-s">Essential cookies</h3>
+			<p>Essential cookies keep your information secure while you use the service. We do not need to ask permission to use them.</p>
+			<table class="govuk-table">
+				<caption class="govuk-visually-hidden">
+					Essential cookies
+				</caption>
+				<thead class="govuk-table__head">
+					<tr class="govuk-table__row">
+						<th class="govuk-table__header govuk-!-width-one-quarter govuk-body-s" scope="col">Cookie name</th>
+						<th class="govuk-table__header govuk-!-width-one-half govuk-body-s" scope="col">What it does</th>
+						<th class="govuk-table__header govuk-!-width-one-quarter govuk-body-s" scope="col">Expires</th>
+					</tr>
+				</thead>
+				<tbody class="govuk-table__body">
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-body-s">Apache</td>
+						<td class="govuk-table__cell govuk-body-s">TBC</td>
+						<td class="govuk-table__cell govuk-body-s">When the browser is closed</td>
+					</tr>
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-body-s">JESSIONID</td>
+						<td class="govuk-table__cell govuk-body-s">TBC</td>
+						<td class="govuk-table__cell govuk-body-s">When the browser is closed</td>
+					</tr>
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-body-s">ROUTEID</td>
+						<td class="govuk-table__cell govuk-body-s">TBC</td>
+						<td class="govuk-table__cell govuk-body-s">When the browser is closed</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3 class="govuk-heading-s">Google Analytics cookies</h3>
+			<p>We use Google Analytics to collect data about how you use the service. This information helps us to improve our service.</p>
+			<p>Google Analytics stores anonymised information about:</p>
+			<ul class="govuk-list govuk-list--bullet">
+				<li>how you got to the service</li>
+				<li>the pages you visit on the service and how long you spend on them</li>
+				<li>what you click on while you’re visiting the site</li>
+			</ul>
+			<table class="govuk-table">
+				<caption class="govuk-visually-hidden">
+					Google Analytics cookies
+				</caption>
+				<thead class="govuk-table__head">
+					<tr class="govuk-table__row">
+						<th class="govuk-table__header govuk-!-width-one-quarter govuk-body-s" scope="col">Cookie name</th>
+						<th class="govuk-table__header govuk-!-width-one-half govuk-body-s" scope="col">What it does</th>
+						<th class="govuk-table__header govuk-!-width-one-quarter govuk-body-s" scope="col">Expires</th>
+					</tr>
+				</thead>
+				<tbody class="govuk-table__body">
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-body-s">_ga</td>
+						<td class="govuk-table__cell govuk-body-s">The cookie is used to calculate visitor, session, campaign data and keep track of site usage for the site's analytics report. The cookies store information anonymously and assign a randomly generated number to identify unique visitors</td>
+						<td class="govuk-table__cell govuk-body-s">2 years</td>
+					</tr>
+					<tr class="govuk-table__row">
+						<td class="govuk-table__cell govuk-body-s">_gid</td>
+						<td class="govuk-table__cell govuk-body-s">The cookie is used to store information of how visitors use a website and helps in creating an analytics report of how the website is doing. The data collected including the number visitors, the source where they have come from, and the pages visited in an anonymous form</td>
+						<td class="govuk-table__cell govuk-body-s">24 hours</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Google doesn’t collect or store your personal information, for example your name or address, so this information can’t be used to identify who you are. We don’t allow Google to use or share our analytics data.</p>
+			<h2 class="govuk-heading-m">Third-party cookies</h2>
+			<h3 class="govuk-heading-s">Our feedback survey</h3>
+			<p>We use <a href="http://www.smartsurvey.co.uk/" rel="external" target="_blank">SmartSurvey</a> to collect feedback comments. We do this to help make sure the service is meeting the needs of its users and to help us make improvements. We set a cookie that lets us know you have seen our satisfaction survey. See <a href="https://www.smartsurvey.co.uk/privacy-policy" rel="external" target="_blank">SmartSurvey privacy policy</a> for more information.</p>
+		</div>
+	</div>
+  {% endblock %}
+</body>
+</html>
