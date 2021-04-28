@@ -49,12 +49,16 @@
     containerClasses: "govuk-width-container"
   }) }}
 
+{% endblock %}
+
+{% block beforeContent %}
 {{ govukPhaseBanner({
   tag: {
     text: "draft"
   },
   html: 'These pages are a work in progress.'
 }) }}
+
 {% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
