@@ -5,6 +5,7 @@
 
 {% from "govuk/components/accordion/macro.njk"           import govukAccordion %}
 {% from "govuk/components/back-link/macro.njk"           import govukBackLink %}
+{% from "govuk/components/phase-banner/macro.njk"        import govukPhaseBanner %}
 {% from "govuk/components/breadcrumbs/macro.njk"         import govukBreadcrumbs %}
 {% from "govuk/components/button/macro.njk"              import govukButton %}
 {% from "govuk/components/character-count/macro.njk"     import govukCharacterCount %}
@@ -36,7 +37,7 @@
 {% endblock %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+  FWS OLR footer page examples 
 {% endblock %}
 
 {% block header %}
@@ -47,6 +48,13 @@
     serviceUrl: "/",
     containerClasses: "govuk-width-container"
   }) }}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "draft"
+  },
+  html: 'These pages are a work in progress.'
+}) }}
 {% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
