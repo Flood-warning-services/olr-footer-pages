@@ -1,19 +1,13 @@
 {% extends "layout.html" %}
 
-{% block pageTitle %}
-  Accessibility statement
-{% endblock %}
+{% block pageTitle %} 
+	Accessibility statement 
+{% endblock %} 
 
 {% block beforeContent %}
-  {{ govukBreadcrumbs({
-    items: [
-      {
-        text: "Home",
-        href: "/"
-      }
-    ]
-  }) }}
-{% endblock %}
+	{{ govukPhaseBanner({tag: {text: "draft"}, html: 'These pages are a work in progress.'}) }}
+	{{ govukBreadcrumbs({ items: [ { text: "Home", href: "/" } ] }) }} 
+{% endblock %} 
 
 {% block content %}
 
