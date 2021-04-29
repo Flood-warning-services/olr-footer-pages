@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %} 
+	Privacy notice 
+{% endblock %} 
+
+{% block beforeContent %}
+	{{ govukPhaseBanner({tag: {text: "draft"}, html: 'These pages are a work in progress.'}) }}
+{% endblock %} 
+
+{% block content %}
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl">Privacy notice</h1>
+			
+			<p>These are the standards you can expect from the Environment Agency when we collect, hold or use your personal information when you use our service.</p>
+			
+			<p>The Environment Agency is the data controller for the Flood Warning System in England. Our <a class="govuk-link" href="https://www.gov.uk/government/organisations/environment-agency/about/personal-information-charter" target="_blank">personal information charter</a> explains your rights and how we deal with your personal information.</p>
+			<p>Natural Resources Wales use the same system and are the data controller if you ask for a service in Wales. To read how Natural Resources Wales uses your personal information go to <a class="govuk-link" href="https://naturalresources.wales/footer-links/privacy-notice/?lang=en" target="_blank">naturalresources.wales/privacy</a>.</p>
+
+			<h2 class="govuk-heading-m">The personal data we need</h2>
+			<p>If you register with us, the personal data we collect about you includes:</p>
+			<ul class="govuk-list govuk-list--bullet">
+				<li>name</li>
+				<li>contact details for receiving warnings and correspondence</li>
+				<li>address or locations of interest for which you would like to receive warnings</li>
+			</ul>
+			<p>We will keep your personal data for as long as your account is active, and for 6 years from the date that your flood warnings account is cancelled. This is in line with our retention policy. See below for more information on what happens when you cancel your account.</p>
+
+			<h2 class="govuk-heading-m">What we do with your personal data</h2>
+			<p>We may use your personal information to:</p>
+			<ul class="govuk-list govuk-list--bullet">
+				<li>send you the warnings you have signed up for</li>
+				<li>send you a small number of service announcements or administrative messages</li>
+				<li>help emergency services and local councils respond to flooding</li>
+				<li>help with our work on flood warning and flood risk management</li>
+			</ul>
+			<p>We may share your information with our agents or representatives, so they can do any of these things for us. Our agents or representatives will only use your personal data in line with what we have set out in this privacy notice.</p>
+			<p>We are allowed to process your personal data because we have a legal duty under the <a class="govuk-link" href="https://www.gov.uk/guidance/preparation-and-planning-for-emergencies-responsibilities-of-responder-agencies-and-others">Civil Contingencies Act</a> to maintain arrangements to warn people who may be at risk of flooding. The lawful basis for processing your personal data is to perform a task in the public interest that is set out in law.</p>
+			<p>Your information is stored and processed securely on servers in the UK.</p>
+
+			<h2 class="govuk-heading-m">If your phone number has been automatically opted-in to receive flood warnings</h2>
+			<p>The <a class="govuk-link" href="https://www.gov.uk/guidance/preparation-and-planning-for-emergencies-responsibilities-of-responder-agencies-and-others">Civil Contingencies Act</a> enables us to work with phone companies to obtain phone numbers for properties where there is no customer of the flood warning service. We tell phone companies about areas at risk of flooding. They send us a list of the phone numbers registered in those areas. They do not give us the names or addresses associated with those numbers.</p>
+			<p>Your phone number will remain on our system for as long as you remain on the list of numbers provided to us for this purpose.</p>
+			<p>You will stop receiving flood warnings if the phone companies no longer provide us with your number. This might happen if you change or cancel your phone number, move house, or if we change the areas that we provide warnings to.</p>
+
+			<h3 class="govuk-heading-m">If you opt out of receiving warnings, or cancel your account</h3>
+			<p>We will keep your phone number on our system for 6 years from the date that you opted out of receiving warnings or cancelled your account. This is in line with our retention policy.</p>
+			<p>We need to keep your details so that we can stop your phone number from being automatically added again after you opt out. After 6 years, we will no longer have a record that you opted out or cancelled your account and your phone number could be automatically added again.</p>
+		</div>
+	</div>
+	{% endblock %}
