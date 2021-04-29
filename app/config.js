@@ -4,7 +4,7 @@
 
 module.exports = {
   // Service name used in header. Eg: 'Renew your passport'
-  serviceName: 'FWS OLR footer page examples',
+  serviceName: 'FWS OLR footer page designs',
 
   // Default port that prototype runs on
   port: '3000',
