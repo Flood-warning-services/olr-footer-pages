@@ -1,13 +1,11 @@
 {% extends "layout.html" %} 
-
 {% block pageTitle %} 
 	Accessibility statement 
 {% endblock %} 
-{% block beforeContent %}
+{% block beforeContent %} 
 	{{ govukPhaseBanner({tag: {text: "draft"}, html: 'These pages are a work in progress.'}) }} 
 	{{ govukBreadcrumbs({ items: [ { text: "Home", href: "/" } ] }) }} 
 {% endblock %} 
-
 {% block content %}
 	<div class="govuk-grid-row">
 		<div class="govuk-grid-column-two-thirds">
@@ -31,27 +29,28 @@
 			<h2 class="govuk-heading-m">Feedback and contact information</h2>
 			<p>If you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille:</p>
 			<ul class="govuk-list govuk-list--bullet">
-				<li>email <a class="govuk-link" href="mailto:enquiries@environment-agency.gov.uk">enquiries@environment-agency.gov.uk</a></li>
+				<li>email <a class="govuk-link" href="mailto:enquiries@environment-agency.gov.uk">enquiries@environment-agency.gov.uk</a>
+				</li>
 				<li>call us on 03708 506 506 (Monday to Friday, 8am to 6pm)</li>
 			</ul>
 			<p>You can also call Floodline who can register you to the service, update your existing details and cancel your account.</p>
-				<div class="govuk-inset-text">
-					<h3 class="govuk-heading-s">Floodline</h3>
-					<ul class="govuk-list">
-						  <li>
-						    <a>Telephone: 0345 988 1188</a>
-						  </li>
-						  <li>
-						    <a>Textphone: 0345 602 6340</a>
-						  </li>
-						  <li>
-						    <a>24 hour service</a>
-						  </li>
-						  <li>
-						    <a class="govuk-link" href="https://www.gov.uk/call-charges">Find out about call charges</a>
-						  </li>
-						</ul>
-				</div>
+			<div class="govuk-inset-text">
+				<h3 class="govuk-heading-s">Floodline</h3>
+				<ul class="govuk-list">
+					<li>
+						<a>Telephone: 0345 988 1188</a>
+					</li>
+					<li>
+						<a>Textphone: 0345 602 6340</a>
+					</li>
+					<li>
+						<a>24 hour service</a>
+					</li>
+					<li>
+						<a class="govuk-link" href="https://www.gov.uk/call-charges">Find out about call charges</a>
+					</li>
+				</ul>
+			</div>
 			<h2 class="govuk-heading-m">Reporting accessibility problems with this website</h2>
 			<p>We’re always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we’re not meeting accessibility requirements, email <a class="govuk-link" href="mailto:enquiries@environment-agency.gov.uk">enquiries@environment-agency.gov.uk</a></p>
 			<h2 class="govuk-heading-m">Enforcement procedure</h2>
@@ -60,7 +59,7 @@
 			<p>The Environment Agency is committed to making its websites accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.</p>
 			<h3 class="govuk-heading-s">Compliance status</h3>
 			<p>TBC</p>
-			<h2 class="govuk-heading-m">Non-accessible content</h2>
+			<h3 class="govuk-heading-m">Non-accessible content</h3>
 			<p>TBC</p>
 			<h3 class="govuk-heading-s">Non-compliance with the accessibility regulations</h3>
 			<p>TBC</p>
@@ -72,8 +71,6 @@
 			<p>TBC</p>
 			<h2 class="govuk-heading-m">Preparation of this accessibility statement</h2>
 			<p>TBC</p>
-
-
 		</div>
 	</div>
 {% endblock %}
