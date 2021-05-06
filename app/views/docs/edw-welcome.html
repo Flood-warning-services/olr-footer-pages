@@ -1,0 +1,79 @@
+{% extends "layout.html" %} 
+{% block pageTitle %} 
+	EDW welcome
+{% endblock %} 
+{% block beforeContent %} 
+	{{ govukPhaseBanner({tag: {text: "draft"}, html: 'These pages are a work in progress.'}) }} 
+{% endblock %} 
+{% block content %}
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl">This phone number has been automatically opted-in to receive flood warnings</h1>
+			<p>In England, the Environment Agency sends flood warnings to phone numbers registered in areas at risk of flooding from rivers or the sea. The service is anonymous and free.</p>
+			<div class="govuk-inset-text">
+				<p>You can provide <a class="govuk-link" href="https://www.smartsurvey.co.uk/s/edw-ur">feedback on this service.</a></p>
+			</div>
+
+			<h2 class="govuk-heading-m">Why did we send you this message?</h2>
+			<p>We have a <a class="govuk-link" href="https://www.gov.uk/guidance/preparation-and-planning-for-emergencies-responsibilities-of-responder-agencies-and-others">legal duty</a> to warn people who may be at risk of flooding so they can take action to protect themselves, their family and property.</p>
+			<p>This phone number was automatically added to the list of numbers to which we send flood warnings. This is because it was registered in an area that’s at risk of flooding in the future and that may have flooded in the past.</p>
+
+			<h2 class="govuk-heading-m">How did we get your number?</h2>
+			<p>We tell phone companies about areas at risk of flooding. They send us a list of the phone numbers registered in those areas.</p>
+			<p>They do not give us the names or addresses associated with those numbers. We store the numbers securely, in line with our <a class="govuk-link" href="/docs/privacy-notice-new">privacy notice.</a></p>
+
+			<h2 class="govuk-heading-m">Do I need to do anything?</h2>
+			<p>You can fully register or stop receiving flood warnings.</p>
+
+			<h2 class="govuk-heading-m">Fully register your details</h2>
+			<p>You can <a class="govuk-link" href="https://www.fws.environment-agency.gov.uk/app/olr/register">fully register your details</a> now to get the best experience of the flood warnings service. The service is free.</p>
+			<p>You can register more than one telephone number. You can also choose to be sent:</p>
+			<ul class="govuk-list govuk-list--bullet">
+				<li>flood alerts, which indicate that flooding is possible</li>
+				<li>warnings and alerts by text message, recorded voice message, or email</li>
+				<li>warnings and alerts about more than one location</li>
+			</ul>
+
+			<h2 class="govuk-heading-m">Stop receiving flood warnings</h2>
+			<p>To opt out of the service, you can do any of the following.</p>
+			<ul class="govuk-list govuk-list--bullet">
+				<li>send an email to <a class="govuk-link" href="mailto:enquiries@environment-agency.gov.uk">enquiries@environment-agency.gov.uk</a> including your telephone number</li>
+				<li>text ‘REMOVE’ to 60006, using the phone which received the original text</li>
+				<li>call Floodline on 0345 988 1188 (<a class="govuk-link" href="https://www.gov.uk/call-charges">call charges</a> may apply)</li>
+			</ul>
+			<p>Your number will be removed from the service and you will no longer receive warnings of potential floods.</p>
+
+			<h2 class="govuk-heading-m">If you do nothing</h2>
+			<p>Your phone will automatically receive local flood warnings whenever they are issued</p>
+
+			<h2 class="govuk-heading-m">If you receive a flood warning or alert</h2>
+			<p>TBC</p>
+
+			<h2 class="govuk-heading-m">Flooding can happen anywhere</h2>
+			<p>Flooding puts lives at risk and causes millions of pounds worth of damage every year. Even if you haven’t seen it at your home or business premises, this doesn’t mean flooding won’t happen.</p>
+			<p>You can <a class="govuk-link" href="https://flood-warning-information.service.gov.uk/long-term-flood-risk">find out the likelihood of a property flooding in the future.</a></p>
+
+			<h2 class="govuk-heading-m">Learn about your local flood risk</h2>
+			<p>Get more information about the flood risk in your area, including:</p>
+			<ul class="govuk-list govuk-list--bullet">
+				<li>details of any current flood alerts or warnings</li>
+				<li>advice about preparing for a flood and help during or after a flood</li>
+				<li>the latest river and sea levels</li>
+				<li>how to get insurance, even if you’ve been flooded before</li>
+			</ul>
+
+
+			<h2 class="govuk-heading-m">Current flooding information</h2>
+			<p>For current flood warning information, visit the <a class="govuk-link" href="https://flood-warning-information.service.gov.uk/warnings">Flood Information Service</a> or call our 24-hour Floodline service</p>
+			<div class="govuk-inset-text">
+				<p><b>Floodline</b></p>
+				<ul class="govuk-list">
+					<li>Telephone: 0345 988 1188</li>
+					<li>Textphone: 0345 602 6340</li>
+					<li>24 hour service</li>
+					<li><a class="govuk-link" href="https://www.gov.uk/call-charges">Find out about call charges</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+{% endblock %}
