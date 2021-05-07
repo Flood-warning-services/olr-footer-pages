@@ -76,7 +76,7 @@
 				</tbody>
 			</table>
 			
-			<h3 class="govuk-heading-s">Google Analytics cookies</h3>
+			<h3 class="govuk-heading-s">Analytics cookies</h3>
 			<p>We use Google Analytics to collect data about how you use the service. This information helps us to improve our service.</p>
 			<p>Google Analytics stores anonymised information about:</p>
 			<ul class="govuk-list govuk-list--bullet">
@@ -120,8 +120,39 @@
 			<h2 class="govuk-heading-m">Third-party cookies</h2>
 			<h3 class="govuk-heading-s">Our feedback survey</h3>
 			<p>We use <a href="https://www.qualtrics.com/">Qualtrics</a> to collect feedback comments. We do this to help make sure the service is meeting the needs of its users and to help us make improvements. See the <a href="https://www.qualtrics.com/privacy-statement/">Qualtrics privacy statement</a> for more information.</p>
-		</div>
+		
+			<div class="govuk-grid-row">
+				<div class="govuk-grid-column-two-thirds">
+				  <h2 class="govuk-heading-m">Change your cookie settings</h2>
+				  <form action="/docs/cookies" method="post" novalidate>	  
+					  {{ govukRadios({
+						idPrefix: "analytics-cookies",
+						name: "analytics-cookies",
+						fieldset: {
+						  legend: {
+							text: "Do you want to accept analytics cookies?",
+							classes: "govuk-fieldset__legend--s"
+						  }
+						},
+						items: [
+						  {
+							value: "yes",
+							text: "Yes"
+						  },
+						  {
+							value: "no",
+							text: "No",
+							checked: true
+						  }
+						]
+					  }) }}
+			  
+					  {{ govukButton({
+						text: "Save cookie settings"
+					  }) }}
+				  </form>
+				</div>
+			  </div>		
+		</div>	
 	</div>
   {% endblock %}
-</body>
-</html>
