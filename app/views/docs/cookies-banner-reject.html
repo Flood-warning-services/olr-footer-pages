@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %} 
+	Cookies rejected
+{% endblock %} 
+
+{% block beforeContent %}
+	{{ govukPhaseBanner({tag: {text: "draft"}, html: 'These pages are a work in progress.'}) }}
+{% endblock %} 
+
+{% block bodyStart %}
+
+	{% set acceptHtml %}
+		<p>You’ve rejected analytics cookies.</p>
+	{% endset %}
+
+	{{ govukCookieBanner({
+		ariaLabel: "Cookies on Sign up for flood warnings",
+			messages: [
+			{
+				html: acceptHtml,
+				actions: [
+				{
+					text: "Hide this message"
+				}
+				]
+			}
+			]
+	}) }}
+
+{% endblock %}
+
+{% block content %}
+	
+{% endblock %}
