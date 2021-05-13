@@ -35,13 +35,6 @@
 						<td class="govuk-table__cell govuk-body-s">Saves your cookie consent settings</td>
 						<td class="govuk-table__cell govuk-body-s">1 year</td>
 					</tr>
-				</tbody>
-				<tbody class="govuk-table__body">
-					<tr class="govuk-table__row">
-						<td class="govuk-table__cell govuk-body-s">cookies_preferences_set</td>
-						<td class="govuk-table__cell govuk-body-s">Lets us know that you’ve saved your cookie consent settings</td>
-						<td class="govuk-table__cell govuk-body-s">1 year</td>
-					</tr>
 				</tbody>			
 			</table>
 			
@@ -130,39 +123,7 @@
 			<h2 class="govuk-heading-m">Third-party cookies</h2>
 			<h3 class="govuk-heading-s">Our feedback survey</h3>
 			<p>We use <a href="https://www.qualtrics.com/">Qualtrics</a> to collect feedback comments. We do this to help make sure the service is meeting the needs of its users and to help us make improvements. See the <a href="https://www.qualtrics.com/privacy-statement/">Qualtrics privacy statement</a> for more information.</p>
-		
-			<div class="govuk-grid-row">
-				<div class="govuk-grid-column-two-thirds">
-				  <h2 class="govuk-heading-m">Change your cookie settings</h2>
-				  <form action="/docs/cookies" method="post" novalidate>	  
-					  {{ govukRadios({
-						idPrefix: "analytics-cookies",
-						name: "analytics-cookies",
-						fieldset: {
-						  legend: {
-							text: "Do you want to accept analytics cookies?",
-							classes: "govuk-fieldset__legend--s"
-						  }
-						},
-						items: [
-						  {
-							value: "yes",
-							text: "Yes"
-						  },
-						  {
-							value: "no",
-							text: "No",
-							checked: true
-						  }
-						]
-					  }) }}
-			  
-					  {{ govukButton({
-						text: "Save cookie settings"
-					  }) }}
-				  </form>
-				</div>
-			  </div>		
+				
 		</div>	
 	</div>
   {% endblock %}
